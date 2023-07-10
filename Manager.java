@@ -27,6 +27,16 @@ public class Manager extends Employee {
         return tier;
     }
 
+    public int findEmployee(String name) {
+        for (Employee employee : reports) {
+            if (employee.getName() == name) {
+                return 1;
+            } else {
+                return 0;
+            }
+        } return 0;
+    }
+
     public void hire(Manager manager) throws Exception {
         if(this.getTier() <= manager.getTier()) {
             throw new Exception("ERROR: cannot hire an Employee of an equal or greater tier.");

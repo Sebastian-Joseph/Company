@@ -203,7 +203,7 @@ public class Company {
         protected void printOrganizationChart() {
             System.out.println();
             if (staff.size() > 0) {
-                System.out.println("Queen Industries Organization Chart");
+                System.out.println("Company Org Chart");
                 sortStaff();
                 for (Employee director : staff) {
                     System.out.println(" - " + director.getName() + ", " + director.getTitle());
